@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/afro.jpg' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+<a href="{% url 'my_about' %}">About Us</a>
+<a href="{% url 'my_contact' %}">Contact</a>
+<a href="{% url 'my_services' %}">Services</a>
+<a href="{% url 'my_blog' %}">Blog</a>
+<a href="{% url 'my_help' %}">Help</a>
+<h2>Welcome to Django class</h2>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda at blanditiis deserunt, dicta dolores doloribus dolorum, est expedita fugit illo iusto labore libero nisi provident quae quaerat repellendus, repudiandae.</span></p>
+<img src="{% static 'images/ankara.jpg' %}" alt="" width="100" height="100">
+<img src="{% static 'images/african.jpg' %}" alt="" width="100" height="100">
+<script src = "{% static 'js/main.js' %}"></script>
+</body>
+</html>
